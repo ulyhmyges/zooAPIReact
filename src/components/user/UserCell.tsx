@@ -1,7 +1,6 @@
 import './UserCell.css';
 import {UserDTO} from "../../dto";
 import {Link, useParams} from "react-router-dom";
-import {ObjectDTO} from "../../dto/ObjectDTO";
 
 export interface IUserCell {
     user: UserDTO

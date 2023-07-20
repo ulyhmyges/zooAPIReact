@@ -1,0 +1,38 @@
+.nav {
+    text-align: center;
+    color: white;
+    background-color: #61dafb;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    font-size: 21px;
+}
+
+.data {
+    border-width: 3px;
+}
+
+.link {
+    color: white;
+}
+
+/* unvisited & visited link */
+a:link, a:visited {
+    color: grey;
+    text-decoration: none;
+}
+
+
+
+/* mouse over link */
+a:hover, a:active {
+    color: coral;
+}
+
+/* selected link */
+a:active {
+    color: lightcoral;
+}
+
+

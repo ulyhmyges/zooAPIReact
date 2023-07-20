@@ -1,5 +1,5 @@
 import axios, {CancelToken} from "axios";
-import {UserDTO, UserType} from "../../dto";
+import {UserDTO} from "../../dto";
 
 export class UserService {
     static async getUsers(token?: CancelToken): Promise<UserDTO[] | undefined> {
