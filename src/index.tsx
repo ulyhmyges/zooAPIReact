@@ -3,13 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Users from "./components/user/Users";
+import UserDetail from "./components/user/UserDetail";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+          <Routes>
+              <Route path={'/'} element={<App />} />
+              <Route path={'/users'} element={<Users />} />
+              <Route path={'/users/:id'} element={<UserDetail />} />
+              <Route path={'/staffs'} element={<Staffs />} />
+              <Route path={'/staffs/:id'} element={<StaffDetail />} />
+          </Routes>
+      </BrowserRouter>
   </React.StrictMode>
 );
 
