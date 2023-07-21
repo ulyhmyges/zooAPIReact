@@ -9,6 +9,7 @@ import UserDetail from "./components/user/UserDetail";
 import Staffs from "./components/staff/Staffs";
 import StaffDetail from "./components/staff/StaffDetail";
 import Navbar from "./components/navbar/Navbar";
+import Animals from './components/animal/Animal';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -23,6 +24,8 @@ root.render(
               <Route path={'/users/:id'} element={<UserDetail />} />
               <Route path={'/staffs'} element={<Staffs />} />
               <Route path={'/staffs/:id'} element={<StaffDetail />} />
+              <Route path={'/animals'} element={<Animals />} />
+              
           </Routes>
       </BrowserRouter>
   </React.StrictMode>
