@@ -1,0 +1,16 @@
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    #gap: 70px;
+    font-size: larger;
+}
+
+
+.center {
+    align-content: center;
+    vertical-align: center;
+    margin-top: 200px;
+    font-size: larger;
+}

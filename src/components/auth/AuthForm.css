@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 50px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    #gap: 70px;
+}
+
+.start {
+    align-self: flex-start;
+}
+
+.end {
+    align-self: flex-end;
+}
+
+.middle {
+    align-self: auto;
+    width: 20%;
+}
+
+.center {
+    align-content: center;
+    vertical-align: center;
+    margin-top: 150px;
+    font-size: larger;
+}
