@@ -11,6 +11,7 @@ import StaffDetail from "./components/staff/StaffDetail";
 import Navbar from "./components/navbar/Navbar";
 import AuthForm from "./components/auth/AuthForm";
 import AuthPage from "./components/auth/AuthPage";
+import Animals from "./components/animal/Animals";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,6 +27,7 @@ root.render(
               <Route path={'/staffs'} element={<Staffs />} />
               <Route path={'/staffs/:id'} element={<StaffDetail />} />
               <Route path={'/connexion'} element={<AuthPage />} />
+              <Route path={'/animals'} element={<Animals />} />
           </Routes>
       </BrowserRouter>
   </React.StrictMode>
