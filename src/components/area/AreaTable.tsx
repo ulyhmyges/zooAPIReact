@@ -9,7 +9,7 @@ export interface IAreaTable {
 
 function AreaTable(args: IAreaTable) {
   return (
-    <table>
+    <table className={'hoverTable'}>
       <thead>
         <tr>
           {args.heads && args.heads.map((item, index) => <th key={index}>{item}</th>)}

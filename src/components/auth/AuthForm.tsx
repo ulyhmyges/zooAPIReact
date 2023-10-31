@@ -29,22 +29,24 @@ function AuthForm(args: IAuthInputs) {
     }
 
     return (
-        <div className={'container'}>
-            <form onSubmit={handleForm} action={'/'}>
-                <label id={'login'} >Login: </label>
-                <input type={'text'} onChange={handleChangeLogin} placeholder={'login'}
-                       name={'login'}/>
+        <div className={'container'} style={{background: 'ghostwhite'}}>
+            <div className={'container'} style={{background: 'blanchedalmond'}}>
+                <form onSubmit={handleForm} action={'/'} style={{margin: '25px auto'}}>
+                    <label id={'login'}>Login: </label>
+                    <input type={'text'} onChange={handleChangeLogin} placeholder={'login'}
+                           name={'login'}/>
 
-                <label id={'password'}>Password: </label>
-                <input type={'text'} onChange={handleChangePassword} name={'password'}/>
+                    <label id={'password'}>Password: </label>
+                    <input type={'text'} onChange={handleChangePassword} name={'password'}/>
 
-                <input type={'submit'} value={'Confirm'}/>
+                    <input type={'submit'} value={'Confirm'}/>
 
-                <div>
-                    <p>{login} --- {password}</p>
-                </div>
+                    <div>
+                        <p>{login} --- {password}</p>
+                    </div>
 
-            </form>
+                </form>
+            </div>
         </div>
     )
 }

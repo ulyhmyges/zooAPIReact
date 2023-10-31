@@ -8,7 +8,7 @@ export interface IStaffTable {
 }
 function StaffTable (args: IStaffTable) {
     return (
-        <table>
+        <table className={'hoverTable'}>
             <thead>
             <tr>
                 {args.heads && args.heads.map((item, index) => <th key={index}>{item}</th>)}

@@ -54,6 +54,32 @@ a:hover {
   background-color: lightcoral;
 }
 
+/* TABLE table, tr, th */
+table {
+  font-family: 'Helvetica Neue', sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Optional: Add border and padding to the table headers */
+th {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  background-color: lightcoral;
+  color: darkslategrey;
+}
+
+/* Cell Background (Even Rows) */
+tr:nth-child(even) {
+  background-color: blanchedalmond;
+}
+
+/* Cell Background (Odd Rows) */
+tr:nth-child(odd) {
+  background-color: ghostwhite;
+}
+
 
 
 

@@ -27,8 +27,7 @@ function UserCell (args: IUserCell) {
                 <h3>User details</h3>
                 <p>id: {args.user._id}</p>
                 <p>login:   {args.user.login}</p>
-                <p>password:    {args.user.password}</p>
-                <p>type:    {args.user.type}</p>
+                <p>type:    {args.user.type ?? "empty"}</p>
             </div>
         )
     }

@@ -6,10 +6,10 @@ form {
 
 .container {
     box-sizing: border-box;
-    margin: 50px auto;
+    margin: 70px auto 70px auto;
     width: 70%;
     height: auto;
-    max-width: 440px;
+    max-width: 480px;
     padding-left: 20px;
     padding-right: 20px;
     border-width: 1px;
@@ -23,7 +23,7 @@ form {
 
 input[type=text], input[type=password] {
     font-size: 16px;
-    margin: 10px 10px 10px 0;
+    margin: 10px 0 10px 0;
 }
 
 input[type=submit] {

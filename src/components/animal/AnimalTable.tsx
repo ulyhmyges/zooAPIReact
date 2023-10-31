@@ -8,7 +8,7 @@ export interface IAnimalTable {
 }
 function AnimalTable (args: IAnimalTable) {
     return (
-        <table>
+        <table className={'hoverTable'}>
             <thead>
             <tr>
                 {args.heads && args.heads.map((item, index) => <th key={index}>{item}</th>)}
