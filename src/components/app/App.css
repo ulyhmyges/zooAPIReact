@@ -14,7 +14,44 @@
 
 /* all p descendants of a div */
 div p {
-  color: orangered;
+  color: darkslategrey;
+}
+
+.link {
+  color: lightcoral;
+}
+
+a {
+  text-decoration: none;
+}
+a:link, a:visited {
+  color: darkslategrey;
+}
+/* mouse over link */
+a:hover {
+  background: blanchedalmond;
+}
+
+/* class */
+.hoverTable {
+  width: 100%;
+  border-collapse: collapse;
+  color: darkslategrey;
+}
+
+.hoverTable td {
+  padding: 7px;
+  border: #4e95f4 1px solid;
+}
+
+/* default color for all table rows */
+.hoverTable tr {
+  background: #b8d1f3;
+}
+
+/* hover highlight color for table row */
+.hoverTable tr:hover {
+  background-color: lightcoral;
 }
 
 

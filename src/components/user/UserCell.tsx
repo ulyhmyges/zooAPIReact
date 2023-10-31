@@ -16,7 +16,7 @@ function UserCell (args: IUserCell) {
                 <td>{args.user.type}</td>
 
                 <td>
-                    {<Link to={`/users/${args.user._id}`}>More details</Link>}
+                    {<Link to={`/users/${args.user._id}`} className={'.link'}>More details</Link>}
                 </td>
 
             </tr>

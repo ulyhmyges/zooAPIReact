@@ -1,3 +1,4 @@
+
 .nav {
     text-align: center;
     color: white;
@@ -11,18 +12,4 @@
 
 .data {
     border-width: 3px;
-}
-
-.link {
-    color: red;
-}
-
-/* unvisited & visited link */
-a:link, a:visited {
-    color: grey;
-    text-decoration: none;
-}
-/* mouse over link */
-a:hover, a:active {
-    color: blue;
 }
