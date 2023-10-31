@@ -13,7 +13,6 @@ function UserCell (args: IUserCell) {
         return (
             <tr>
                 <td>{args.user.login}</td>
-                <td>{args.user.password}</td>
                 <td>{args.user.type}</td>
 
                 <td>

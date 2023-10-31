@@ -1,14 +1,17 @@
-//import './AuthPage.css';
-//import './Sheetstyle.css';
-//import './sheet1.css';
+
 
 import AuthForm from "./AuthForm";
-import SigninForm from "./SigninForm";
+import {Navigate, redirect, useNavigate} from "react-router-dom";
+import {useState} from "react";
 
 function AuthPage () {
 
+    const [user, setUser] = useState<number>(0);
+    const navigateFunc = useNavigate();
     const handleValidateForm = (login: string, pwd: string) => {
         window.alert(login + pwd);
+        //setUser(1)
+        navigateFunc('/')
     }
 
     return (

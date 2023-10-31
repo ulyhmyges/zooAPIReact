@@ -1,19 +1,55 @@
-table, th, td {
-    border: 1px solid;
-}
-thead {
-    background-color: aqua;
-}
+/* Optional: Set font family and size for the entire table */
 table {
+    font-family: 'Helvetica Neue', sans-serif;
     width: 100%;
-    #border-collapse: collapse;
+    border-collapse: collapse;
 }
+
+/* Optional: Add border and padding to the table headers */
 th {
-    height: 50px;
-}
-td {
+    border: 1px solid #ccc;
+    padding: 12px;
     text-align: center;
+    background-color: lightcoral;
+    color: darkslategrey;
 }
-th, td {
-    border-bottom: 2px solid #ddd;
+
+/* class */
+.hoverTable {
+    width: 100%;
+    border-collapse: collapse;
 }
+
+.hoverTable td {
+    padding: 7px;
+    border: #4e95f4 1px solid;
+}
+
+/* default color for all table rows */
+.hoverTable tr {
+    background: #b8d1f3;
+}
+
+/* hover highlight color for table row */
+.hoverTable tr:hover {
+    background-color: lightcoral;
+}
+
+/* Cell Background (Even Rows) */
+tr:nth-child(even) {
+    background-color: blanchedalmond;
+}
+
+/* Cell Background (Odd Rows) */
+tr:nth-child(odd) {
+    background-color: ghostwhite;
+}
+/* Optional: Style specific cells based on their content */
+/*td[data-type="number"] {
+  text-align: right;
+}*/
+
+/* Optional: Set a specific width for a column */
+/*td:nth-child(2) {
+  width: 200px;
+}*/

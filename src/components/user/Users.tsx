@@ -3,7 +3,6 @@ import {useEffect, useState} from "react";
 import {UserDTO} from "../../dto";
 import axios from "axios";
 import {UserService} from "../../services";
-import UserCell from "./UserCell";
 import UserTable from "./UserTable";
 
 function Users () {
@@ -23,7 +22,7 @@ function Users () {
         <div>
             <h2>Users</h2>
             <UserTable
-                heads={['login', 'password', 'type', 'details']}
+                heads={['login', 'type', 'details']}
                 rows={users}
             />
         </div>

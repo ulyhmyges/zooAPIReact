@@ -14,7 +14,7 @@
 }
 
 .link {
-    color: white;
+    color: red;
 }
 
 /* unvisited & visited link */
@@ -22,17 +22,7 @@ a:link, a:visited {
     color: grey;
     text-decoration: none;
 }
-
-
-
 /* mouse over link */
 a:hover, a:active {
-    color: coral;
+    color: blue;
 }
-
-/* selected link */
-a:active {
-    color: lightcoral;
-}
-
-

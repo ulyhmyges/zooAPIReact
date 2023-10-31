@@ -1,4 +1,4 @@
-import './sheet1.css';
+import './SigninForm.css';
 import {SyntheticEvent, useState} from "react";
 import {IAuthInputs} from "./AuthForm";
 

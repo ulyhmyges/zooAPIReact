@@ -17,27 +17,7 @@ div p {
   color: orangered;
 }
 
-input:in-range {
-  border: 3px solid red
-}
 
-div {
-  height: 80px;
-}
-input {
-    margin:30px;
-}
-div:focus-within {
-  background-color: #1565C0;
-}
-
-div:hover {
-  color: navajowhite;
-}
-
-p {
-  color: #4CAF50;
-}
 
 
 
