@@ -1,6 +1,6 @@
+//import './UserTable.css';
+import './Table.css';
 import UserCell from "./UserCell";
-import {ObjectDTO} from "../../dto/ObjectDTO";
-import './UserTable.css';
 import {UserDTO} from "../../dto";
 
 export interface IUserTable {

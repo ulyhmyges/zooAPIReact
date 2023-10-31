@@ -1,5 +1,9 @@
-import './AuthPage.css';
+//import './AuthPage.css';
+//import './Sheetstyle.css';
+//import './sheet1.css';
+
 import AuthForm from "./AuthForm";
+import SigninForm from "./SigninForm";
 
 function AuthPage () {
 
@@ -8,11 +12,8 @@ function AuthPage () {
     }
 
     return (
-        <div className={''}>
-            <div className={'line'}>
-                <h3>Sign up</h3>
-            </div>
-            <div>
+        <div >
+            <div className={''}>
                 <AuthForm onValidation={handleValidateForm} />
             </div>
         </div>

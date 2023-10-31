@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+//import './index.css';
 import App from './components/app/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
@@ -9,9 +9,9 @@ import UserDetail from "./components/user/UserDetail";
 import Staffs from "./components/staff/Staffs";
 import StaffDetail from "./components/staff/StaffDetail";
 import Navbar from "./components/navbar/Navbar";
-import AuthForm from "./components/auth/AuthForm";
 import AuthPage from "./components/auth/AuthPage";
 import Animals from "./components/animal/Animals";
+import Areas from "./components/area/Areas";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,7 +26,8 @@ root.render(
               <Route path={'/users/:id'} element={<UserDetail />} />
               <Route path={'/staffs'} element={<Staffs />} />
               <Route path={'/staffs/:id'} element={<StaffDetail />} />
-              <Route path={'/connexion'} element={<AuthPage />} />
+              <Route path={'/areas'} element={<Areas />} />
+              <Route path={'/connection'} element={<AuthPage />} />
               <Route path={'/animals'} element={<Animals />} />
           </Routes>
       </BrowserRouter>

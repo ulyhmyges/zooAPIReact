@@ -21,7 +21,7 @@ function Users () {
     console.log("users: "+ users)
     return (
         <div>
-            <h1>hi</h1>
+            <h2>Users</h2>
             <UserTable
                 heads={['login', 'password', 'type', 'details']}
                 rows={users}

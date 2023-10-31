@@ -20,7 +20,7 @@ function Staffs () {
     console.log("staffs: "+ staffs)
     return (
         <div>
-            <h1>hi</h1>
+            <h2>Staffs</h2>
             <StaffTable
                 heads={['name', 'type', 'available', 'details']}
                 rows={staffs}

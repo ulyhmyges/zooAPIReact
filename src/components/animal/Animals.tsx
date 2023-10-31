@@ -20,7 +20,7 @@ function Animals () {
     console.log("animals: "+ animals)
     return (
         <div>
-            <h1>hi</h1>
+            <h2>Animals</h2>
             <AnimalTable
                 heads={['id', 'name', 'scientificName', 'birth', 'gender']}
                 rows={animals}

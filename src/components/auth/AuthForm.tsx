@@ -8,9 +8,10 @@ export interface IAuthInputs {
     type?: UserType,
     onValidation?: (login: string, password: string) => void // type function
 }
+
 function AuthForm(args: IAuthInputs) {
-    const [ login, setLogin ] = useState(args.login ?? '')
-    const [ password, setPassword ] = useState(args.password ?? '')
+    const [login, setLogin] = useState(args.login ?? '')
+    const [password, setPassword] = useState(args.password ?? '')
 
     const handleChangeLogin = (event: SyntheticEvent<HTMLInputElement>) => {
         setLogin(event.currentTarget.value);
@@ -28,26 +29,21 @@ function AuthForm(args: IAuthInputs) {
     }
 
     return (
-        <div>
-            <form onSubmit={handleForm} className={'center'}>
+        <div className={'container'}>
+            <form onSubmit={handleForm}>
+                <label id={'login'} >Login: </label>
+                <input type={'text'} onChange={handleChangeLogin} placeholder={'Your login'}
+                       name={'login'}/>
+
+                <label id={'password'}>Password: </label>
+                <input type={'text'} onChange={handleChangePassword} name={'password'}/>
+
+                <input type={'submit'} value={'Confirm'}/>
+
                 <div>
-                    <div className={'line'}>
-                        <div className={'container'}>
-                            <label id={'login'} className={'start'}>Login: </label>
-                            <label id={'password'} className={'start'}>Password: </label>
-                        </div>
-                        <div className={'container'}>
-                            <input type={'text'} className={'start'} onChange={handleChangeLogin} placeholder={'Your login'}  name={'login'}/>
-                            <input type={'text'} className={'start'} onChange={handleChangePassword} name={'password'} />
-                        </div>
-                    </div>
-                    <div className={'line'}>
-                        <input type={'submit'} className={'middle'} value={'Confirm'} />
-                    </div>
-                    <div>
-                        <p>{login} --- {password}</p>
-                    </div>
+                    <p>{login} --- {password}</p>
                 </div>
+
             </form>
         </div>
     )

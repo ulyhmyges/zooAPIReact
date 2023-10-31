@@ -1,6 +1,6 @@
 import './Animal.css';
 import {AnimalDTO} from "../../dto";
-import {Link, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 
 
 export interface IAnimalDTO {

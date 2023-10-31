@@ -20,7 +20,7 @@ function Areas() {
 
   return (
     <div>
-      <h1>Areas</h1>
+      <h2>Areas</h2>
       <AreaTable
         heads={['Name', 'Type', 'Capacity', 'Details']}
         rows={areas}
