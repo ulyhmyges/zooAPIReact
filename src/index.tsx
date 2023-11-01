@@ -12,6 +12,7 @@ import Navbar from "./components/navbar/Navbar";
 import AuthPage from "./components/auth/AuthPage";
 import Animals from "./components/animal/Animals";
 import Areas from "./components/area/Areas";
+import Dashboard from "./components/user/Dashboard";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -28,6 +29,7 @@ root.render(
               <Route path={'/staffs/:id'} element={<StaffDetail />} />
               <Route path={'/areas'} element={<Areas />} />
               <Route path={'/connection'} element={<AuthPage />} />
+              <Route path={'/users/dashboard'} element={<Dashboard />} />
               <Route path={'/animals'} element={<Animals />} />
           </Routes>
       </BrowserRouter>

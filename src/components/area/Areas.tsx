@@ -18,6 +18,8 @@ function Areas() {
     return () => source.cancel();
   }, []);
 
+  console.log('areas history', window.history.state)
+
   return (
     <div>
       <h2>Areas</h2>
