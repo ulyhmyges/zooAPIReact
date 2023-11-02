@@ -33,11 +33,12 @@ function AuthForm(args: IAuthInputs) {
             <div className={'container'} style={{background: 'blanchedalmond'}}>
                 <form onSubmit={handleForm} action={'/'} style={{margin: '25px auto'}}>
                     <label id={'login'}>Login: </label>
-                    <input type={'text'} onChange={handleChangeLogin} placeholder={'login'}
+                    <input type={'text'} onChange={handleChangeLogin}
                            name={'login'}/>
 
                     <label id={'password'}>Password: </label>
-                    <input type={'text'} onChange={handleChangePassword} name={'password'}/>
+                    <input type={'text'} onChange={handleChangePassword}
+                           name={'password'}/>
 
                     <input type={'submit'} value={'Confirm'}/>
 
